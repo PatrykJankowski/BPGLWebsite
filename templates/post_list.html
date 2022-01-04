@@ -78,7 +78,7 @@
       </div>
     </div>
 
-
+<div>
 </header>
 
     <div class="container">
@@ -100,13 +100,13 @@
     <section id="katalogi">
           <div class="row">
 
-          <h2>Katalogi</h2>
+          <h2>Katalog</h2>
 
-              <div class="col-sm-6">
-                  <a href="http://83.14.59.198:81/cgi-bin/LibraOpac.dll" target="_blank" title="Katalog Libra - Linia">
+              <div class="col-sm-12">
+                  <a href="https://m6175.lib.mol.pl" target="_blank" title="Katalog biblioteczny Libra">
                       <figure>
-                          <img src="{% static 'img/katalog_linia.png' %}" alt="Katalog Libra - Linia">
-                          <figcaption>Katalog Linia</figcaption>
+                          <img src="{% static 'img/katalog.png' %}" alt="Katalog Libra" style="height: 100px; max-width: 100%; object-fit: contain">
+                          <figcaption>Katalog biblioteczny Libra</figcaption>
                       </figure>
                   </a>
               </div>
@@ -118,14 +118,14 @@
                       </figure>
                   </a>
               </div>{% endcomment %}
-              <div class="col-sm-6">
+             {% comment %} <div class="col-sm-6">
                   <a href="http://83.14.252.230:81/LibraOpac.dll" target="_blank" title="Katalog Libra - Strzepcz">
                       <figure>
                           <img src="{% static 'img/katalog_strzepcz.png' %}" alt="Katalog Libra - Strzepcz">
                           <figcaption>Katalog Strzepcz</figcaption>
                       </figure>
                   </a>
-              </div>
+              </div>{% endcomment %}
               {% comment %}<div class="col-md-3 col-sm-6">
                   <a href="http://83.14.252.230:82/sf/anims" target="_blank" title="Molik - katalog dla dzieci - Strzepcz">
                       <figure>
@@ -350,25 +350,27 @@
         <h3>Działalność biblioteki wspierana jest przez:</h3>
     <div class="row">
 
-        <div class="col-md-2">
+        {% comment %}<div class="col-md-2">
             <img class="center-block" src="{% static 'img/biblioteka_narodowa.jpg' %}" alt="Biblioteka Narodowa" />
-        </div>
-        <div class="col-md-2">
+        </div>{% endcomment %}
+        {% comment %}<div class="col-md-2">
              <img class="center-block" src="{% static 'img/program_rozwoju_czytelnictwa.jpg' %}" alt="Program Rozwoju Czytelnictwa" />
-        </div>
+        </div>{% endcomment %}
         <div class="col-md-2">
             <a href="http://www.wbpg.org.pl/tresc/metropolitalna-karta-do-kultury" title="Metropolitalna karta do kultury" target="_blank"><img class="center-block" src="{% static 'img/karta.jpg' %}" alt="Metropolitalna karta do kultury"/></a>
         </div>
-        <div class="col-md-2">
+        {% comment %}<div class="col-md-2">
              <a href="https://www.pitax.pl" title="PITax.pl - łatwe podatki" target="_blank"><img class="center-block" src="{% static 'img/pitax.jpg' %}" alt="PITax.pl - łatwe podatki"/></a>
-        </div>
-        <div class="col-md-2">
+        </div>{% endcomment %}
+        {% comment %}<div class="col-md-2">
              <img class="center-block" src="{% static 'img/mkidn.jpg' %}" alt="Ministerstwo Kultury i Dziedzictwa Narodowego"/>
-        </div>
+        </div>{% endcomment %}
         <div class="col-md-2">
             <img class="center-block" src="{% static 'img/kraszewski.jpg' %}" alt="Kraszewski - komputery dla bibliotek"/>
         </div>
-
+        <div class="col-md-8">
+            <img class="center-block" src="{% static 'img/belka.jpg' %}" alt="Ministerstwo Kultury i Dziedzictwa Narodowego"/>
+        </div>
     </div><!--/span-->
 
     </section>
